@@ -9,18 +9,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Runner_Class extends Base_Class {
 
-	public static WebDriver driver;
+	public static WebDriver driver= Base_Class.getBrowser("chrome");
 
 	public static void main(String[] args) throws InterruptedException {
 
-		driver = getBrowser("chrome");
+		
 		getURL("http://automationpractice.com/index.php");
 		// driver.getTitle();
 
 		POM_Elements a = new POM_Elements(driver);
 		clickOnElement(a.getClickcart());
-		explicitwait(a.getProceedbutton(), 30);
-		explicitwait(a.getCheckoutbutton(), 30);
+		explicitWait(a.getProceedbutton(), 30);
+		explicitWait(a.getCheckoutbutton(), 30);
 		inputValueElement(a.getEmail(), "sppras2581@gmail.com");
 		clickOnElement(a.getSubmit());
 
@@ -35,7 +35,7 @@ public class Runner_Class extends Base_Class {
 		driver.getTitle();
 
 		selectByIndex(a.getDate(), 27);
-		selectByIndex1(a.getMonth(), 3);
+		selectByIndex(a.getMonth(), 3);
 		selectByValue(a.getYears(), "1997");
 
 		inputValueElement(a.getCompany(), "Wabco");
@@ -55,15 +55,13 @@ public class Runner_Class extends Base_Class {
 		clickOnElement(a.getCheckboxbutton());
 		clickOnElement(a.getProceed3());
 
-		explicitwait(a.getBankwire(), 20);
+		explicitWait(a.getBankwire(), 20);
 		System.out.println("---------------");
 		clickOnElement(a.getSubmit3());
 
-		sleep();
 		maximize();
 		getElementText(a.getPurchasestatement());
 
-		sleep();
 
 	}
 }

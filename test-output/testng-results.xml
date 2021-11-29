@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17356" started-at="2021-11-29T18:03:10Z" finished-at="2021-11-29T18:03:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17356" started-at="2021-11-29T18:03:10Z" finished-at="2021-11-29T18:03:28Z">
+      <class name="com.testng.TestNG_Adactin">
+        <test-method status="PASS" signature="launch_Browser(java.lang.String)[pri:-2, instance:com.testng.TestNG_Adactin@f14a7d4]" name="launch_Browser" duration-ms="2198" started-at="2021-11-29T23:33:10Z" data-provider="url" finished-at="2021-11-29T23:33:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://adactinhotelapp.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_Browser -->
+        <test-method status="PASS" signature="adactin_Signin(java.lang.String, java.lang.String)[pri:-1, instance:com.testng.TestNG_Adactin@f14a7d4]" name="adactin_Signin" duration-ms="1175" started-at="2021-11-29T23:33:13Z" depends-on-methods="com.testng.TestNG_Adactin.launch_Browser" finished-at="2021-11-29T23:33:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prasanth35]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[513189]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adactin_Signin -->
+        <test-method status="PASS" signature="hotel_Booking()[pri:0, instance:com.testng.TestNG_Adactin@f14a7d4]" name="hotel_Booking" duration-ms="3571" started-at="2021-11-29T23:33:14Z" depends-on-methods="com.testng.TestNG_Adactin.adactin_Signin" finished-at="2021-11-29T23:33:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotel_Booking -->
+        <test-method status="PASS" signature="registration_Process()[pri:1, instance:com.testng.TestNG_Adactin@f14a7d4]" name="registration_Process" duration-ms="1821" started-at="2021-11-29T23:33:17Z" finished-at="2021-11-29T23:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration_Process -->
+        <test-method status="PASS" signature="itener_Logout()[pri:2, instance:com.testng.TestNG_Adactin@f14a7d4]" name="itener_Logout" duration-ms="8382" started-at="2021-11-29T23:33:19Z" finished-at="2021-11-29T23:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itener_Logout -->
+        <test-method status="PASS" signature="log4j()[pri:3, instance:com.testng.TestNG_Adactin@f14a7d4]" name="log4j" duration-ms="113" started-at="2021-11-29T23:33:28Z" finished-at="2021-11-29T23:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log4j -->
+      </class> <!-- com.testng.TestNG_Adactin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="Name" value="param-val-not-found"/>
+  <parameter name="Password" value="param-val-not-found"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.testng.TestNG_Adactin">
+        <methods>
+          <include name="launch_Browser"/>
+          <include name="adactin_Signin"/>
+          <include name="registration_Process"/>
+          <include name="hotel_Booking"/>
+          <include name="itener_Logout"/>
+        </methods>
+      </class> <!-- com.testng.TestNG_Adactin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

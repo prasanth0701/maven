@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.testng.Transform_Class"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.testng.Demo_Class">
+        <methods>
+          <include name="password_Validation"/>
+        </methods>
+      </class> <!-- com.testng.Demo_Class -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

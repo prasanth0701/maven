@@ -16,7 +16,8 @@ public class POM_Elements {
 	
 
 	@FindBy(xpath="(//span[text()='Add to cart'])[1]")
-	private WebElement clickcart;
+	private WebElement clickcart; 
+	
 
 	public WebDriver getDriver() {
 		return driver;
